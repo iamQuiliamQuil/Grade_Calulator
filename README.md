@@ -1,3 +1,8 @@
+# Grade Calculator
+This was a project I did with four other students. I was personally responsible for the savefile functionality, 
+and made some small contributions to other parts of the project. The origninal repository is hosted on GitLab.
+https://serd.uab.albany.edu/dy573381/spring-22-418y-team1-grade-calculator
+
 # Team 1 - Grade Calculator Website
 Repository for the team project in Spring 2022-ICSI 418Y-Software Engineering
 
