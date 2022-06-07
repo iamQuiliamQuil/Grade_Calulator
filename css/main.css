@@ -1,0 +1,290 @@
+/* General CSS Styling for all elements */
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100px;
+    padding:10px 90px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    display:flex;
+}
+
+.navbar ul li a {
+    line-height: 80px;
+    padding: 12px 30px;
+    text-decoration: None;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 217, 0, 0.932);;
+    border-radius: 6px;
+}
+
+.navbar ul li a.active {
+    background:rgba(255, 217, 0, 0.932);
+    border-radius: 6px;
+}
+
+.main {
+    position: relative;
+    width: 750px;
+    min-height: 400px;
+    background: #333;
+    padding:40px 30px 30px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top:50px;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset -5px -5px 15px rgba(0,0,0,0.5),
+    inset 5px 5px 15px rgba(0,0,0,0.5);
+
+}
+
+/* encases the save/upload buttons */
+.submain {
+    position: relative;
+    width: 750px;
+    height: 75px;
+    background: #333;
+    padding:20px 30px 30px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top:50px;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset -5px -5px 15px rgba(0,0,0,0.5),
+    inset 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.label {
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 10px;
+}
+
+/* space the upload and save data button */
+.space {
+    margin-right:10px ;
+    margin-left:10px;
+}
+
+.calculator-section {
+    position: relative;
+    display:grid
+}
+
+/* design for finalGrade display*/
+.calculator-section .value {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #a7af7c;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: right;
+    font-size:6.2em;
+    color:black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*design for input fields*/
+.calculator-section input {
+    width: 150px;
+    height: 80px;
+    background: linear-gradient(180deg,#2f2f2f, #3f3f3f );
+    color:white;
+    font-size:1.2em;
+
+}
+
+/*design for buttons*/
+.calculator-section button {
+    position:relative;
+    display:grid;
+    place-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    background: linear-gradient(180deg,#2f2f2f, #3f3f3f );
+    box-shadow: inset -8px 0 8px rgba(0,0,0,0.25),
+    inset 0 -8px 8px rgba(0,0,0,0.25),
+    0 0 0 2px rgba(0,0,0,0.75),
+    10px 20px 25px rgba(0,0,0,0.4);
+    user-select: None;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.calculator-section button::before {
+    content: '';
+    position: absolute;
+    top: 3px; 
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(9deg,#2f2f2f, #4d4d4d);
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.1),
+    10px 5px 10px rgba(0,0,0,0.15);
+    border-left: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-top: 1px solid #0004;
+}
+
+.calculator-section .btn_delete {
+    display: inline;
+    width: 140px;
+    background: #f00;
+}
+
+.calculator-section .btn_delete::before {
+    background:linear-gradient(9deg,#d20000, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+
+.calculator-section .btn_add {
+    width: 100px;
+    background: greenyellow; 
+}
+
+.calculator-section .btn_add::before {
+    background:linear-gradient(9deg,#66d200, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+  
+.calculator-section .btn_calculate {
+    width: 140px;
+    background: orange;
+}
+
+.calculator-section .btn_calculate::before {
+    background:linear-gradient(9deg,#d27e00, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+
+.calculator-section .btn_add_assignment{
+    height: 90px;
+    width: 160px;
+    background: rgb(47, 224, 255); 
+}
+
+.calculator-section .btn_add_assignment::before{
+    background:linear-gradient(9deg,#00bad2, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+  
+
+/*text of each button*/
+.calculator-section button i {
+    position: relative;
+    font-style: normal;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+/*Quillan's shitty CSS that will probably need to be altered or deleted*/
+.calculator-section .btn-upload {
+    width: 140px;
+    background: rgba(238, 204, 10, 0.932);;
+}
+
+.calculator-section .btn-upload::before{
+    background:linear-gradient(9deg,rgba(255, 217, 0, 0.932), #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+    
+}
+
+.calculator-section .btn-download {
+    width: 140px;
+    background: rgba(255, 217, 0, 0.932);;
+
+}
+
+.calculator-section .btn-download::before {
+ 
+    background:linear-gradient(9deg,rgba(255, 217, 0, 0.932), #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+
+/*
+CSS for the right column of the Basic Calculator page
+*/
+.row .rightColumn {
+    margin-top: 50px;
+}
+
+.row .rightColumn #basicExample table, .row .rightColumn #basicExample th, .row .rightColumn #basicExample td {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.row .rightColumn #basicExample th, .row .rightColumn #basicExample td {
+    padding: 5px;
+}
+
+/* Source: https://www.w3schools.com/howto/howto_css_arrows.asp */
+.arrow {
+    border: solid black;
+    border-width: 0px 3px 3px 0px;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.rightArrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.downArrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+hr {
+    background-color: black;
+}
